@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  </head>
+  <body>
+
+
+
+
+    <div class="container-fluid">
+   
+
+      <div id="myCarousel" class="owl-carousel owl-theme my-3">
+
+
+        <div class="card my-3">
+          <a href="" ><img src="public/assets/img/accessories.png"  class="card-img-top" height="300" alt="Image 1" /></a>
+          <div class="card-body">
+           <a href="" style="text-decoration: none;"> <h5 class="card-title text-center">Accessories</h5></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#myCarousel").owlCarousel({
+          items: 5, // Number of cards shown in each slide
+          loop: true, // Continuously loop the carousel
+          margin: 20, // Space between cards
+          nav: true, // Show navigation buttons
+          paginationSpeed: 1000,
+          navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>",
+          ], // Custom navigation icons
+          responsive: {
+            0: {
+              items: 1, // Number of cards shown in the carousel for smaller screens
+            },
+            768: {
+              items: 2, // Number of cards shown in the carousel for medium screens
+            },
+            992: {
+              items: 5, // Number of cards shown in the carousel for large screens
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
